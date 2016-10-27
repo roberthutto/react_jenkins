@@ -10,8 +10,8 @@ node {
     stage('Build') {
         sh "./mvnw install"
     }
-    stage('Results') {
-        junit '**/target/surefire-reports/TEST-*.xml'
-        archive 'target/*.jar'
-    }
+//    stage('Results') {
+//        junit '**/target/surefire-reports/TEST-*.xml'
+//        archive 'target/*.jar'
+//    }
 }
